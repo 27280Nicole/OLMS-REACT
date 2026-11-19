@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "title": "Web Development Fundamentals",
+    "level": "Beginner",
+    "duration": "8 weeks",
+    "students": 1240,
+    "instructor": "Dr. Bob Instructor"
+  },
+  {
+    "id": 2,
+    "title": "Introduction to Data Science",
+    "level": "Intermediate",
+    "duration": "10 weeks",
+    "students": 860,
+    "instructor": "Dr. Bob Instructor"
+  },
+  {
+    "id": 3,
+    "title": "Digital Marketing Essentials",
+    "level": "Beginner",
+    "duration": "6 weeks",
+    "students": 2015,
+    "instructor": "Dr. Bob Instructor"
+  },
+  {
+    "id": 4,
+    "title": "UI/UX Design Principles",
+    "level": "Advanced",
+    "duration": "9 weeks",
+    "students": 530,
+    "instructor": "Dr. Bob Instructor"
+  },
+  {
+    "id": 5,
+    "title": "Business Management Basics",
+    "level": "Intermediate",
+    "duration": "7 weeks",
+    "students": 945,
+    "instructor": "Dr. Bob Instructor"
+  },
+  {
+    "id": 6,
+    "title": "Public Speaking & Communication",
+    "level": "Beginner",
+    "duration": "4 weeks",
+    "students": 1680,
+    "instructor": "Dr. Bob Instructor"
+  },
+  {
+    "id": 7,
+    "title": "biology",
+    "level": "Beginner",
+    "duration": "7 weeks",
+    "students": 0,
+    "instructor": "NICOLE UMUTONIWASE"
+  }
+]

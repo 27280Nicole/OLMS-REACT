@@ -1,0 +1,37 @@
+[
+  {
+    "username": "student1",
+    "password": "student123",
+    "role": "student",
+    "name": "Alice Student",
+    "email": "alice@example.com"
+  },
+  {
+    "username": "instructor1",
+    "password": "teach123",
+    "role": "instructor",
+    "name": "Dr. Bob Instructor",
+    "email": "bob@example.com"
+  },
+  {
+    "username": "umutoninicole@gmail.com",
+    "password": "12345678k",
+    "role": "instructor",
+    "name": "NICOLE UMUTONIWASE",
+    "email": "umutoninicole@gmail.com"
+  },
+  {
+    "username": "mu@example.com",
+    "password": "12345678g",
+    "role": "instructor",
+    "name": "NICOLE UMUTONIWASE",
+    "email": "mu@example.com"
+  },
+  {
+    "username": "kar@gmail.com",
+    "password": "1234567a",
+    "role": "student",
+    "name": "kar kar",
+    "email": "kar@gmail.com"
+  }
+]

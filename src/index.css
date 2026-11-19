@@ -1,0 +1,560 @@
+:root {
+  --primary: #1e40af;
+  --primary-dark: #1e3a8a;
+  --primary-light: #3b82f6;
+  --accent: #eff6ff;
+  --text: #1f2937;
+  --text-light: #6b7280;
+  --border: #dbeafe;
+  --white: #ffffff;
+  --success: #16a34a;
+  --error: #dc2626;
+  --radius: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  margin: 0;
+  color: var(--text);
+  background: #f8fafc;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+}
+
+/* ---------- Header / Nav ---------- */
+
+header {
+  background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+  color: var(--white);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 10px rgba(30, 64, 175, 0.25);
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--white);
+}
+
+.brand .logo-mark {
+  width: 34px;
+  height: 34px;
+  background: var(--white);
+  color: var(--primary);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0.4rem 0.2rem;
+  border-bottom: 2px solid transparent;
+}
+
+nav a:hover,
+nav a[aria-current="page"] {
+  border-bottom: 2px solid var(--white);
+}
+
+nav a.btn-nav {
+  background: var(--white);
+  color: var(--primary-dark);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border-bottom: none;
+}
+
+nav a.btn-nav:hover {
+  background: var(--accent);
+  border-bottom: none;
+}
+
+.nav-auth-slot {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+/* ---------- Layout ---------- */
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+section {
+  margin: 3rem 0;
+}
+
+h1, h2, h3 {
+  color: var(--primary-dark);
+}
+
+/* ---------- Hero ---------- */
+
+.hero {
+  background: linear-gradient(135deg, var(--primary-dark), var(--primary-light));
+  color: var(--white);
+  margin: 0;
+  padding: 4rem 1.5rem;
+  text-align: center;
+}
+
+.hero h1 {
+  color: var(--white);
+  font-size: 2.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+  font-size: 1.1rem;
+  opacity: 0.95;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.6rem;
+  border-radius: 6px;
+  font-weight: 700;
+  text-decoration: none;
+  border: 2px solid transparent;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background: var(--white);
+  color: var(--primary-dark);
+}
+
+.btn-primary:hover {
+  background: var(--accent);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--white);
+  border: 2px solid var(--white);
+}
+
+.btn-outline:hover {
+  background: rgba(255,255,255,0.15);
+}
+
+/* ---------- Feature / Course cards ---------- */
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(30, 64, 175, 0.12);
+}
+
+.card .icon {
+  width: 46px;
+  height: 46px;
+  background: var(--accent);
+  color: var(--primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+}
+
+.card h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.card p {
+  color: var(--text-light);
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.course-card .level {
+  display: inline-block;
+  background: var(--accent);
+  color: var(--primary-dark);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  margin-bottom: 0.6rem;
+}
+
+.course-card .meta {
+  margin-top: 0.8rem;
+  font-size: 0.85rem;
+  color: var(--text-light);
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--border);
+  padding-top: 0.6rem;
+}
+
+/* ---------- Forms ---------- */
+
+.form-box {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 2rem;
+  max-width: 480px;
+  margin: 0 auto;
+  box-shadow: 0 4px 20px rgba(30, 64, 175, 0.08);
+}
+
+.form-box h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.form-subtext {
+  text-align: center;
+  color: var(--text-light);
+  margin-top: -0.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+form div.field {
+  margin-bottom: 1.2rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 0.65rem 0.8rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: var(--primary-light);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+/* Show a red border only after the user has typed something invalid,
+   not on empty untouched fields (that would look broken on page load) */
+input:not(:placeholder-shown):invalid,
+textarea:not(:placeholder-shown):invalid {
+  border-color: var(--error);
+}
+
+input:not(:placeholder-shown):valid,
+textarea:not(:placeholder-shown):valid {
+  border-color: var(--success);
+}
+
+.field small {
+  display: block;
+  margin-top: 0.3rem;
+  color: var(--text-light);
+  font-size: 0.8rem;
+}
+
+.checkbox-field {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.checkbox-field input {
+  width: auto;
+  margin-top: 0.2rem;
+}
+
+.checkbox-field label {
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+button[type="submit"] {
+  width: 100%;
+  background: var(--primary);
+  color: var(--white);
+  border: none;
+  padding: 0.8rem;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+button[type="submit"]:hover {
+  background: var(--primary-dark);
+}
+
+.form-footer-link {
+  text-align: center;
+  margin-top: 1.2rem;
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+.form-footer-link a {
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.form-footer-link a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Contact info ---------- */
+
+address {
+  font-style: normal;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+address p {
+  margin: 0.4rem 0;
+}
+
+/* ---------- JS-driven form feedback ---------- */
+
+.error-text {
+  display: block;
+  min-height: 1.1em;
+  color: var(--error);
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+}
+
+.field-invalid {
+  border-color: var(--error) !important;
+}
+
+.form-message {
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  margin-bottom: 1.2rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.form-message:empty {
+  display: none;
+}
+
+.form-message.success {
+  background: #e3f6e5;
+  color: #1e6b2d;
+  border: 1px solid #a9dcb0;
+}
+
+.form-message.error {
+  background: #fbe3e3;
+  color: #a12626;
+  border: 1px solid #f0b3b3;
+}
+
+/* ---------- Dashboard ---------- */
+
+.dashboard-header {
+  background: linear-gradient(135deg, var(--primary-dark), var(--primary-light));
+  color: var(--white);
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+}
+
+.dashboard-header h1 {
+  color: var(--white);
+  margin-bottom: 0.3rem;
+}
+
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.stat-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.stat-card .stat-number {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.stat-card .stat-label {
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+.progress-bar {
+  background: var(--accent);
+  border-radius: 999px;
+  height: 10px;
+  margin-top: 0.8rem;
+  overflow: hidden;
+}
+
+.progress-fill {
+  background: var(--primary-light);
+  height: 100%;
+  border-radius: 999px;
+}
+
+.progress-label {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  margin: 0.4rem 0 0 0;
+}
+
+/* ---------- Course enrollment ---------- */
+
+.enroll-area {
+  margin-top: 1rem;
+}
+
+.btn-enroll {
+  display: inline-block;
+  background: var(--primary);
+  color: var(--white);
+  border: none;
+  padding: 0.5rem 1.1rem;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  font-family: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-enroll:hover {
+  background: var(--primary-dark);
+}
+
+.enrolled-badge {
+  display: inline-block;
+  background: #e3f6e5;
+  color: #1e6b2d;
+  border: 1px solid #a9dcb0;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.section-link {
+  display: inline-block;
+  margin-top: 1.5rem;
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.section-link:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: var(--primary-dark);
+  color: var(--white);
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+}

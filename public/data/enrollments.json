@@ -1,0 +1,37 @@
+[
+  {
+    "email": "alice@example.com",
+    "courseId": 1,
+    "progress": 72
+  },
+  {
+    "email": "alice@example.com",
+    "courseId": 3,
+    "progress": 45
+  },
+  {
+    "email": "alice@example.com",
+    "courseId": 4,
+    "progress": 10
+  },
+  {
+    "email": "alice@example.com",
+    "courseId": 2,
+    "progress": 0
+  },
+  {
+    "email": "kar@gmail.com",
+    "courseId": 4,
+    "progress": 0
+  },
+  {
+    "email": "kar@gmail.com",
+    "courseId": 1,
+    "progress": 0
+  },
+  {
+    "email": "kar@gmail.com",
+    "courseId": 2,
+    "progress": 0
+  }
+]
